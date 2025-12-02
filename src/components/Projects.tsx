@@ -4,6 +4,7 @@ import { fadeInUp, staggerContainer, scaleIn } from '../config/motionConfig';
 import { useRef } from 'react';
 import BrainwaveImg from '../assets/Brainwave.png';
 import DocTimeImg from '../assets/Doctime.png';
+import XoraImg from '../assets/Xora.png';
 interface Project {
   title: string;
   description: string;
@@ -34,12 +35,12 @@ const projects: Project[] = [
     color: 'from-green-500 to-teal-500',
   },
   {
-    title: 'Social Media Dashboard',
-    description: 'Analytics dashboard for social media management with data visualization, scheduling, and engagement tracking.',
-    image: 'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg',
-    tech: ['React', 'TypeScript', 'GraphQL', 'Redis'],
-    liveLink: '#',
-    githubLink: '#',
+    title: 'Xora',
+    description: 'A fully designed frontend website with sections for pricing plans, a beginner-friendly guide, and a roadmap showcasing future updates, all crafted with a clean, responsive, and user-friendly design.',
+    image: XoraImg,
+    tech: ['React', 'Tailwind',],
+    liveLink: 'https://xora-woad.vercel.app/',
+    githubLink: 'https://github.com/MTayyabso/Xora',
     color: 'from-pink-500 to-rose-500',
   },
   {
