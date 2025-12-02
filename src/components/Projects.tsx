@@ -3,7 +3,7 @@ import { Icon } from '@iconify/react';
 import { fadeInUp, staggerContainer, scaleIn } from '../config/motionConfig';
 import { useRef } from 'react';
 import BrainwaveImg from '../assets/Brainwave.png';
-import DocTimeImg from '../assets/DocTime.png';
+import DocTimeImg from '../assets/Doctime.png';
 interface Project {
   title: string;
   description: string;
