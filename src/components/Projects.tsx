@@ -2,7 +2,8 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { Icon } from '@iconify/react';
 import { fadeInUp, staggerContainer, scaleIn } from '../config/motionConfig';
 import { useRef } from 'react';
-
+import BrainwaveImg from '../assets/Brainwave.png';
+import DocTimeImg from '../assets/DocTime.png';
 interface Project {
   title: string;
   description: string;
@@ -15,21 +16,21 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: 'E-Commerce Platform',
-    description: 'Full-featured online shopping platform with payment integration, admin dashboard, and real-time inventory management.',
-    image: 'https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg',
-    tech: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-    liveLink: '#',
-    githubLink: '#',
+    title: 'AI skeleton Frontend',
+    description: 'A fully designed frontend website with sections for pricing plans, a beginner-friendly guide, and a roadmap showcasing future updates, all crafted with a clean, responsive, and user-friendly design.',
+    image: BrainwaveImg,
+    tech: ['Next.js', 'Tailwind',],
+    liveLink: 'https://brainwave-chi-topaz.vercel.app/',
+    githubLink: 'https://github.com/MTayyabso/Brainwave',
     color: 'from-blue-500 to-purple-500',
   },
   {
-    title: 'Task Management App',
-    description: 'Collaborative task management tool with real-time updates, team workspaces, and productivity analytics.',
-    image: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg',
-    tech: ['React', 'Express', 'PostgreSQL', 'Socket.io'],
-    liveLink: '#',
-    githubLink: '#',
+    title: 'DocTime',
+    description: 'Built a full-stack web app for booking doctor appointments with user roles (Admin, Doctor, Patient), JWT authentication, real-time notifications, and responsive UI. Implemented secure APIs, schedule management, and MongoDB data handling',
+    image: DocTimeImg,
+    tech: ['Next.js', 'Tailwind', 'Express', 'MongoDB',],
+    liveLink: 'https://doc-time-nu.vercel.app/',
+    githubLink: 'https://github.com/MTayyabso/DocTime',
     color: 'from-green-500 to-teal-500',
   },
   {
@@ -101,25 +102,27 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
         <div className="absolute top-4 right-4 flex gap-2">
           <motion.a
             href={project.liveLink}
+            target="_blank"
+            rel="noopener noreferrer"
             initial={{ scale: 0, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
             whileHover={{ scale: 1.15, rotate: 5 }}
             whileTap={{ scale: 0.9 }}
             transition={{ delay: index * 0.1 + 0.2 }}
             className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-            onClick={(e) => e.preventDefault()}
           >
             <Icon icon="mdi:open-in-new" className="text-xl text-primary" />
           </motion.a>
           <motion.a
             href={project.githubLink}
+            target="_blank"
+            rel="noopener noreferrer"
             initial={{ scale: 0, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
             whileHover={{ scale: 1.15, rotate: -5 }}
             whileTap={{ scale: 0.9 }}
             transition={{ delay: index * 0.1 + 0.3 }}
             className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-            onClick={(e) => e.preventDefault()}
           >
             <Icon icon="mdi:github" className="text-xl text-gray-900" />
           </motion.a>
