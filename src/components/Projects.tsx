@@ -27,7 +27,7 @@ const projects: Project[] = [
   {
     title: 'DocTime',
     description: 'Built a full-stack web app for booking doctor appointments with user roles (Admin, Doctor, Patient), JWT authentication, real-time notifications, and responsive UI. Implemented secure APIs, schedule management, and MongoDB data handling',
-    image: DocTimeImg,
+    image: DocTimeImg, 
     tech: ['Next.js', 'Tailwind', 'Express', 'MongoDB',],
     liveLink: 'https://doc-time-nu.vercel.app/',
     githubLink: 'https://github.com/MTayyabso/DocTime',
