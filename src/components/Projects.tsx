@@ -5,6 +5,7 @@ import { useRef } from 'react';
 import BrainwaveImg from '../assets/Brainwave.png';
 import DocTimeImg from '../assets/Doctime.png';
 import XoraImg from '../assets/Xora.png';
+import codefleximg from '../assets/codeflex.png'
 interface Project {
   title: string;
   description: string;
@@ -29,7 +30,7 @@ const projects: Project[] = [
     title: 'DocTime',
     description: 'Built a full-stack web app for booking doctor appointments with user roles (Admin, Doctor, Patient), JWT authentication, real-time notifications, and responsive UI. Implemented secure APIs, schedule management, and MongoDB data handling',
     image: DocTimeImg, 
-    tech: ['Next.js', 'Tailwind', 'Express', 'MongoDB',],
+    tech: ['Next.js', 'Tailwind', 'Node.js', 'Express', 'MongoDB',],
     liveLink: 'https://doc-time-nu.vercel.app/',
     githubLink: 'https://github.com/MTayyabso/DocTime',
     color: 'from-green-500 to-teal-500',
@@ -44,12 +45,12 @@ const projects: Project[] = [
     color: 'from-pink-500 to-rose-500',
   },
   {
-    title: 'AI Content Generator',
-    description: 'AI-powered content creation tool that generates high-quality articles, social posts, and marketing copy.',
-    image: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg',
+    title: 'CodeFlex',
+    description: 'This project demonstrates the power of multimodal AI by combining real-time voice processing with Large Language Models. Users engage in a natural, two-way voice conversation with an AI agent to discuss their fitness journey. The application captures key metrics—such as age, weight, and fitness goals—and leverages the Gemini API to architect a complete fitness regime. Features include secure authentication via Clerk, real-time data synchronization with Convex, and a responsive UI built with Tailwind CSS.',
+    image: codefleximg,
     tech: ['Next.js', 'OpenAI', 'Tailwind', 'Prisma'],
-    liveLink: '#',
-    githubLink: '#',
+    liveLink: 'https://code-flex-ai-one.vercel.app/',
+    githubLink: 'https://github.com/MTayyabso/CodeFlex_Ai',
     color: 'from-orange-500 to-amber-500',
   },
   {
