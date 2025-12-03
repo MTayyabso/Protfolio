@@ -48,7 +48,7 @@ const projects: Project[] = [
     title: 'CodeFlex',
     description: 'This project demonstrates the power of multimodal AI by combining real-time voice processing with Large Language Models. Users engage in a natural, two-way voice conversation with an AI agent to discuss their fitness journey. The application captures key metrics—such as age, weight, and fitness goals—and leverages the Gemini API to architect a complete fitness regime. Features include secure authentication via Clerk, real-time data synchronization with Convex, and a responsive UI built with Tailwind CSS.',
     image: codefleximg,
-    tech: ['Next.js', 'OpenAI', 'Tailwind', 'Prisma'],
+    tech: ['Next.js', 'OpenAI', 'Tailwind', 'convex', 'clerk'],
     liveLink: 'https://code-flex-ai-one.vercel.app/',
     githubLink: 'https://github.com/MTayyabso/CodeFlex_Ai',
     color: 'from-orange-500 to-amber-500',
