@@ -51,7 +51,7 @@ const projects: Project[] = [
     tech: ['Next.js', 'OpenAI', 'Tailwind', 'convex', 'clerk'],
     liveLink: 'https://code-flex-ai-one.vercel.app/',
     githubLink: 'https://github.com/MTayyabso/CodeFlex_Ai',
-    color: 'from-orange-500 to-amber-500',
+    color: 'from-orange-500 t o-amber-500',
   },
   {
     title: 'Fitness Tracking App',
