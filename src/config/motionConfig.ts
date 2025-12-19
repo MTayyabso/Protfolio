@@ -223,7 +223,7 @@ export const elastic = {
 };
 
 // Magnetic hover effect
-export const magneticHover = (strength = 10) => ({
+export const magneticHover = (_strength = 10) => ({
   scale: 1.05,
   transition: {
     type: 'spring',
@@ -289,3 +289,166 @@ export const staggerBlur = {
   },
 };
 
+// 3D Tilt animation
+export const tilt3D = {
+  rest: {
+    rotateX: 0,
+    rotateY: 0,
+    scale: 1,
+  },
+  hover: {
+    scale: 1.02,
+    transition: {
+      type: 'spring',
+      stiffness: 400,
+      damping: 20,
+    },
+  },
+};
+
+// Magnetic follow effect for buttons
+export const magneticFollow = {
+  rest: { x: 0, y: 0 },
+  hover: {
+    transition: {
+      type: 'spring',
+      stiffness: 300,
+      damping: 15,
+    },
+  },
+};
+
+// Smooth scroll reveal with blur
+export const smoothScrollReveal = {
+  initial: {
+    opacity: 0,
+    y: 60,
+    filter: 'blur(10px)',
+    scale: 0.95,
+  },
+  whileInView: {
+    opacity: 1,
+    y: 0,
+    filter: 'blur(0px)',
+    scale: 1,
+  },
+  viewport: { once: true, margin: '-50px' },
+  transition: {
+    duration: 0.8,
+    ease: [0.25, 0.1, 0.25, 1],
+  },
+};
+
+// Glass card animation with depth
+export const glassCardAnimation = {
+  initial: {
+    opacity: 0,
+    y: 40,
+    backdropFilter: 'blur(0px)',
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    backdropFilter: 'blur(12px)',
+  },
+  hover: {
+    y: -8,
+    scale: 1.02,
+    boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
+    transition: {
+      type: 'spring',
+      stiffness: 400,
+      damping: 20,
+    },
+  },
+};
+
+// Ripple expand animation
+export const rippleExpand = {
+  initial: { scale: 0, opacity: 1 },
+  animate: {
+    scale: 4,
+    opacity: 0,
+    transition: {
+      duration: 0.6,
+      ease: 'easeOut',
+    },
+  },
+};
+
+// Section reveal with stagger
+export const sectionReveal = {
+  initial: {},
+  animate: {
+    transition: {
+      staggerChildren: 0.15,
+      delayChildren: 0.3,
+    },
+  },
+};
+
+// Child item for stagger
+export const sectionChild = {
+  initial: {
+    opacity: 0,
+    y: 30,
+    scale: 0.95,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: {
+      type: 'spring',
+      stiffness: 100,
+      damping: 15,
+    },
+  },
+};
+
+// Hover lift effect
+export const hoverLift = {
+  rest: { y: 0, scale: 1 },
+  hover: {
+    y: -10,
+    scale: 1.02,
+    transition: {
+      type: 'spring',
+      stiffness: 400,
+      damping: 20,
+    },
+  },
+};
+
+// Entrance from different directions
+export const entranceVariants = {
+  fromLeft: {
+    initial: { x: -100, opacity: 0 },
+    animate: { x: 0, opacity: 1 },
+  },
+  fromRight: {
+    initial: { x: 100, opacity: 0 },
+    animate: { x: 0, opacity: 1 },
+  },
+  fromTop: {
+    initial: { y: -100, opacity: 0 },
+    animate: { y: 0, opacity: 1 },
+  },
+  fromBottom: {
+    initial: { y: 100, opacity: 0 },
+    animate: { y: 0, opacity: 1 },
+  },
+};
+
+// Default spring transition
+export const defaultSpring = {
+  type: 'spring',
+  stiffness: 200,
+  damping: 20,
+};
+
+// Smooth ease transition
+export const smoothEase = {
+  duration: 0.6,
+  ease: [0.25, 0.1, 0.25, 1],
+};
