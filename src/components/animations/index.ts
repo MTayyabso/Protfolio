@@ -5,6 +5,7 @@ export { default as TiltCard } from './TiltCard';
 
 // Hero Background Effects
 export { default as HeroTitleBackground, AnimatedTextHighlight } from './HeroTitleBackground';
+export { default as CursorGlow } from './CursorGlow';
 
 // Parallax Components
 export { default as ParallaxSection } from './ParallaxSection';

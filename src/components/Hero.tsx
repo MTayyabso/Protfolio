@@ -3,7 +3,7 @@ import { Icon } from '@iconify/react';
 import { Suspense, lazy } from 'react';
 import { charReveal } from '../config/motionConfig';
 import { useTypewriter } from '../hooks/useTypewriter';
-import { MagneticButton, HeroTitleBackground } from './animations';
+import { MagneticButton, HeroTitleBackground, CursorGlow } from './animations';
 
 // Lazy load 3D component for better initial load
 const ParticleField = lazy(() => import('./animations/ParticleField'));
@@ -44,12 +44,19 @@ const Hero = () => {
 
   const socialLinks = [
     { icon: 'mdi:github', url: 'https://github.com/MTayyabso', label: 'GitHub' },
-    { icon: 'mdi:linkedin', url: 'https://www.linkedin.com/in/m-tayyab-sohail-5779ab339/', label: 'LinkedIn' },
+    { icon: 'mdi:linkedin', url: 'https://www.linkedin.com/in/tayyab-sohail-dev/', label: 'LinkedIn' },
     { icon: 'mdi:email', url: '#contact', label: 'Email' },
   ];
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white relative overflow-hidden py-20">
+    <section className="hero-section min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white relative overflow-hidden py-20">
+      {/* Cursor-reactive background animation */}
+      <CursorGlow 
+        primaryColor="#FF8F00"
+        secondaryColor="#00BCD4"
+        tertiaryColor="#7C3AED"
+      />
+
       {/* 3D Particle Background */}
       <Suspense fallback={null}>
         <ParticleField 

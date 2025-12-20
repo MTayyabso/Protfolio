@@ -15,7 +15,7 @@ const Footer = () => {
 
   const socialLinks = [
     { icon: 'mdi:github', url: 'https://github.com/MTayyabso', label: 'GitHub' },
-    { icon: 'mdi:linkedin', url: 'https://www.linkedin.com/in/m-tayyab-sohail-5779ab339/', label: 'LinkedIn' },
+    { icon: 'mdi:linkedin', url: 'https://www.linkedin.com/in/tayyab-sohail-dev/', label: 'LinkedIn' },
     { icon: 'mdi:email', url: 'mailto:mtayyabsohail8@gmail.com', label: 'Email' },
   ];
 

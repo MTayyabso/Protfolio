@@ -60,26 +60,7 @@ const projects: Project[] = [
     color: 'from-orange-500 to-amber-500',
     features: ['AI Powered', 'Voice Control', 'Real-time Sync'],
   },
-  {
-    title: 'Fitness Tracking App',
-    description: 'Comprehensive fitness application with workout plans, nutrition tracking, and progress visualization.',
-    image: 'https://images.pexels.com/photos/4162449/pexels-photo-4162449.jpeg',
-    tech: ['React Native', 'Node.js', 'MongoDB', 'AWS'],
-    liveLink: '#',
-    githubLink: '#',
-    color: 'from-cyan-500 to-blue-500',
-    features: ['Cross-platform', 'Analytics', 'Cloud Sync'],
-  },
-  {
-    title: 'Real Estate Platform',
-    description: 'Property listing and management system with virtual tours, booking system, and CRM integration.',
-    image: 'https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg',
-    tech: ['React', 'Node.js', 'PostgreSQL', 'Mapbox'],
-    liveLink: '#',
-    githubLink: '#',
-    color: 'from-violet-500 to-purple-500',
-    features: ['Virtual Tours', 'Maps', 'CRM'],
-  },
+
 ];
 
 // Project Modal Component
@@ -445,7 +426,7 @@ const Projects = () => {
             </motion.p>
           </motion.div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
             {projects.map((project, index) => (
               <ProjectCard 
                 key={project.title} 

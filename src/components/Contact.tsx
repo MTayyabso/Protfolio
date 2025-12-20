@@ -157,7 +157,7 @@ const Contact = () => {
 
   const socialLinks = [
     { icon: 'mdi:github', url: 'https://github.com/MTayyabso', label: 'GitHub', color: 'hover:text-gray-900 hover:bg-gray-100', hoverShadow: 'rgba(0,0,0,0.2)' },
-    { icon: 'mdi:linkedin', url: 'https://www.linkedin.com/in/m-tayyab-sohail-5779ab339/', label: 'LinkedIn', color: 'hover:text-blue-600 hover:bg-blue-50', hoverShadow: 'rgba(37,99,235,0.3)' },
+    { icon: 'mdi:linkedin', url: 'https://www.linkedin.com/in/tayyab-sohail-dev/', label: 'LinkedIn', color: 'hover:text-blue-600 hover:bg-blue-50', hoverShadow: 'rgba(37,99,235,0.3)' },
     { icon: 'mdi:email', url: 'mailto:mtayyabsohail8@gmail.com', label: 'Email', color: 'hover:text-primary hover:bg-primary/10', hoverShadow: 'rgba(255,143,0,0.3)' },
   ];
 
