@@ -12,6 +12,7 @@ import ScrollProgress from './components/ScrollProgress';
 import BackToTop from './components/BackToTop';
 import IntroLoader from './components/IntroLoader';
 import CustomCursor from './components/CustomCursor';
+import { FloatingChat } from './components/chat/FloatingChat';
 import { pageTransition } from './config/motionConfig';
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
   return (
     <>
       {/* Custom Cursor - always visible */}
-      <CustomCursor 
+      <CustomCursor
         ringColor="#00BCD4"
         dotColor="#00BCD4"
         ringSize={40}
@@ -63,6 +64,7 @@ function App() {
               <Footer />
             </motion.div>
             <BackToTop />
+            <FloatingChat />
           </motion.div>
         )}
       </AnimatePresence>

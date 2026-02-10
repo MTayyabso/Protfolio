@@ -12,7 +12,7 @@ const Hero = () => {
   const roles = [
     'React Developer',
     'Node.js Expert',
-    'MongoDB Specialist', 
+    'MongoDB Specialist',
     'Express.js Developer',
     'UI/UX Enthusiast',
     'Database Architect',
@@ -39,7 +39,7 @@ const Hero = () => {
   const stats = [
     { value: '15+', label: 'Projects Completed', icon: 'mdi:briefcase-check' },
     { value: '10+', label: 'Happy Clients', icon: 'mdi:account-group' },
-    { value: '1.5+', label: 'Years Experience', icon: 'mdi:trophy' },
+    { value: '2.5+', label: 'Years Experience', icon: 'mdi:trophy' },
   ];
 
   const socialLinks = [
@@ -51,7 +51,7 @@ const Hero = () => {
   return (
     <section className="hero-section min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white relative overflow-hidden py-20">
       {/* Cursor-reactive background animation */}
-      <CursorGlow 
+      <CursorGlow
         primaryColor="#FF8F00"
         secondaryColor="#00BCD4"
         tertiaryColor="#7C3AED"
@@ -59,8 +59,8 @@ const Hero = () => {
 
       {/* 3D Particle Background */}
       <Suspense fallback={null}>
-        <ParticleField 
-          className="opacity-60" 
+        <ParticleField
+          className="opacity-60"
           particleCount={500}
           primaryColor="#FF8F00"
           secondaryColor="#00BCD4"
@@ -68,7 +68,7 @@ const Hero = () => {
       </Suspense>
 
       {/* Animated gradient background */}
-      <motion.div 
+      <motion.div
         className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,_rgba(255,143,0,0.15),transparent_50%)]"
         animate={{
           scale: [1, 1.2, 1],
@@ -84,7 +84,7 @@ const Hero = () => {
       {/* Decorative grid pattern */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,143,0,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,143,0,0.03)_1px,transparent_1px)] bg-[size:100px_100px] [mask-image:radial-gradient(ellipse_at_center,black_20%,transparent_80%)]" />
 
-      <motion.div 
+      <motion.div
         className="container mx-auto px-6 z-10"
         style={{ opacity, scale }}
       >
@@ -98,7 +98,7 @@ const Hero = () => {
               transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
               className="mb-8 inline-block"
             >
-              <motion.div 
+              <motion.div
                 className="px-4 py-2 bg-gradient-to-r from-primary/20 to-secondary/20 border border-primary/30 rounded-full backdrop-blur-md"
                 whileHover={{ scale: 1.05, borderColor: 'rgba(255, 143, 0, 0.5)' }}
               >
@@ -121,7 +121,7 @@ const Hero = () => {
               transition={{ delay: 0.3, duration: 0.6 }}
               className="mb-8 relative inline-block"
             >
-             
+
             </motion.div>
 
             {/* Animated name with premium background effect */}
@@ -174,7 +174,7 @@ const Hero = () => {
               </h2>
               <div className="text-base sm:text-lg md:text-xl text-gray-400 flex items-center justify-center gap-2">
                 <span>{currentRole}</span>
-                <motion.span 
+                <motion.span
                   className="inline-block w-0.5 h-5 bg-secondary"
                   animate={{ opacity: [1, 0] }}
                   transition={{ duration: 0.8, repeat: Infinity, repeatType: 'reverse' }}
@@ -189,7 +189,7 @@ const Hero = () => {
               transition={{ delay: 1.5, duration: 0.6 }}
               className="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto mb-10 leading-relaxed"
             >
-              Crafting exceptional digital experiences with modern technologies. 
+              Crafting exceptional digital experiences with modern technologies.
               Specialized in building scalable web applications and elegant user interfaces.
             </motion.p>
 
@@ -245,8 +245,8 @@ const Hero = () => {
                   initial={{ opacity: 0, scale: 0 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ delay: 2 + index * 0.1, type: 'spring', stiffness: 200 }}
-                  whileHover={{ 
-                    scale: 1.2, 
+                  whileHover={{
+                    scale: 1.2,
                     y: -5,
                     boxShadow: '0 10px 30px rgba(255, 143, 0, 0.3)'
                   }}
@@ -273,21 +273,21 @@ const Hero = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 2.2 + index * 0.1 }}
-                whileHover={{ 
-                  scale: 1.05, 
+                whileHover={{
+                  scale: 1.05,
                   y: -8,
                   boxShadow: '0 25px 50px rgba(0, 0, 0, 0.3)'
                 }}
                 className="bg-gray-800/30 backdrop-blur-md border border-gray-700/50 rounded-2xl p-6 text-center relative overflow-hidden group"
               >
                 {/* Animated gradient overlay */}
-                <motion.div 
+                <motion.div
                   className="absolute inset-0 bg-gradient-to-br from-primary/10 to-secondary/10"
                   initial={{ opacity: 0 }}
                   whileHover={{ opacity: 1 }}
                   transition={{ duration: 0.3 }}
                 />
-                
+
                 {/* Shine effect on hover */}
                 <motion.div
                   className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent"
@@ -295,7 +295,7 @@ const Hero = () => {
                   whileHover={{ x: '100%' }}
                   transition={{ duration: 0.6 }}
                 />
-                
+
                 <div className="relative z-10">
                   <motion.div
                     whileHover={{ rotate: 360, scale: 1.1 }}

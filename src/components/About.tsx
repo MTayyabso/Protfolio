@@ -22,7 +22,7 @@ const About = () => {
     if (!isInView) return;
 
     // Animate counters
-    const yearsTarget = 1.5;
+    const yearsTarget = 2.5;
     const projectsTarget = 15;
     const duration = 2000;
     const steps = 50;
@@ -35,7 +35,7 @@ const About = () => {
       currentStep++;
       setYearsCount(Math.min(Math.round(yearsIncrement * currentStep * 10) / 10, yearsTarget));
       setProjectsCount(Math.min(Math.round(projectsIncrement * currentStep), projectsTarget));
-      
+
       if (currentStep >= steps) {
         clearInterval(timer);
       }
@@ -52,17 +52,17 @@ const About = () => {
   ];
 
   return (
-    <section 
-      ref={sectionRef} 
-      id="about" 
+    <section
+      ref={sectionRef}
+      id="about"
       className="py-12 sm:py-16 md:py-20 bg-gray-50 relative overflow-hidden"
     >
       {/* Animated background decorations */}
-      <motion.div 
+      <motion.div
         className="absolute top-20 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl"
         style={{ y: backgroundY }}
       />
-      <motion.div 
+      <motion.div
         className="absolute bottom-20 left-0 w-96 h-96 bg-secondary/5 rounded-full blur-3xl"
         style={{ y: backgroundY }}
       />
@@ -76,7 +76,7 @@ const About = () => {
           onViewportEnter={() => setIsInView(true)}
           className="text-center mb-10 sm:mb-12 md:mb-16"
         >
-          <motion.span 
+          <motion.span
             className="inline-block px-4 py-1 bg-primary/10 text-primary text-sm font-medium rounded-full mb-4"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -87,7 +87,7 @@ const About = () => {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-3 sm:mb-4">
             About <span className="text-primary">Me</span>
           </h2>
-          <motion.div 
+          <motion.div
             className="w-16 sm:w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"
             initial={{ scaleX: 0 }}
             whileInView={{ scaleX: 1 }}
@@ -99,9 +99,9 @@ const About = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 items-center max-w-6xl mx-auto">
           {/* Image with 3D tilt effect */}
           <ScrollReveal direction="left" delay={0.2}>
-            <TiltCard 
-              tiltAmount={10} 
-              glareEnabled={true} 
+            <TiltCard
+              tiltAmount={10}
+              glareEnabled={true}
               scale={1.02}
               className="relative mx-auto w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 max-w-full"
             >
@@ -111,27 +111,27 @@ const About = () => {
                 className="relative w-full h-full"
               >
                 {/* Decorative backgrounds */}
-                <motion.div 
+                <motion.div
                   className="absolute inset-0 bg-gradient-to-br from-primary to-secondary rounded-2xl sm:rounded-3xl rotate-6"
                   animate={{ rotate: [6, 8, 6] }}
                   transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
                   style={{ opacity: 0.2 }}
                 />
-                <motion.div 
+                <motion.div
                   className="absolute inset-0 bg-gradient-to-br from-secondary to-primary rounded-2xl sm:rounded-3xl -rotate-6"
                   animate={{ rotate: [-6, -8, -6] }}
                   transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
                   style={{ opacity: 0.2 }}
                 />
-                
+
                 {/* Main image container */}
                 <motion.div
                   variants={imageReveal}
                   className="relative w-full h-full bg-gradient-to-br from-gray-200 to-gray-300 rounded-2xl sm:rounded-3xl overflow-hidden border-2 sm:border-4 border-white shadow-xl sm:shadow-2xl"
                 >
                   {/* Profile image */}
-                  <img 
-                    src={profileImg} 
+                  <img
+                    src={profileImg}
                     alt="Muhammad Tayyab Sohail"
                     className="w-full h-full object-cover"
                     onError={(e) => {
@@ -204,7 +204,7 @@ const About = () => {
                       className="flex items-center gap-3"
                       whileHover={{ x: 5 }}
                     >
-                      <motion.div 
+                      <motion.div
                         className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0"
                         whileHover={{ rotate: 360 }}
                         transition={{ duration: 0.5 }}
@@ -230,7 +230,7 @@ const About = () => {
                       className="flex items-center gap-3"
                       whileHover={{ x: 5 }}
                     >
-                      <motion.div 
+                      <motion.div
                         className="w-10 h-10 sm:w-12 sm:h-12 bg-secondary/10 rounded-lg flex items-center justify-center flex-shrink-0"
                         whileHover={{ rotate: 360 }}
                         transition={{ duration: 0.5 }}
@@ -258,7 +258,7 @@ const About = () => {
           className="mt-16 sm:mt-20 max-w-4xl mx-auto"
         >
           <h3 className="text-2xl font-bold text-gray-900 text-center mb-10">My Journey</h3>
-          
+
           <div className="relative">
             {/* Timeline line */}
             <motion.div
@@ -279,9 +279,8 @@ const About = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.3 + index * 0.15, type: 'spring' }}
-                  className={`relative flex items-center gap-4 md:gap-8 ${
-                    index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
-                  }`}
+                  className={`relative flex items-center gap-4 md:gap-8 ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
+                    }`}
                 >
                   {/* Timeline dot */}
                   <motion.div
